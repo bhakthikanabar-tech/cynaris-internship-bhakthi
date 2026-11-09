@@ -1,2 +1,2 @@
 # cynaris-internship-bhakthi
-ynaris Solutions Internship Tasks and Projects
+cynaris Solutions Internship Tasks and Projects
