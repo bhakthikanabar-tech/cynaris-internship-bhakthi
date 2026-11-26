@@ -1,0 +1,18 @@
+BUSINESS INSIGHTS - SUPERSTORE DATASET
+==================================================
+
+1. CATEGORY PERFORMANCE:
+Technology generates the highest sales, amounting to 836,154.03.
+
+2. REGIONAL PERFORMANCE:
+West is the leading sales region, generating 725,457.82 in total sales.
+
+3. DISCOUNT AND PROFIT:
+The discount level of 50% has the lowest average profit of -310.70.
+
+4. MONTHLY SALES:
+The highest monthly sales occurred in November 2017, reaching 118,447.82.
+
+5. CUSTOMER SEGMENTS:
+The Consumer segment contributes the highest sales, totalling 1,161,401.34.
+

@@ -1,0 +1,82 @@
+dataContractSpecification: "0.9.3"
+id: "superstore-sales-v1"
+
+info:
+  title: "Superstore Sales Data Contract"
+  owner: "Data Producer - Intern"
+  consumer: "BI Dashboard Team"
+  description: "Contract for sales transaction data"
+  freshness_sla: "Data should be refreshed within 24 hours"
+
+models:
+  sales:
+    type: table
+    description: "Sales transaction records"
+    fields:
+      Row ID:
+        type: integer
+        required: true
+        unique: true
+
+      Order ID:
+        type: string
+        required: true
+
+      Customer ID:
+        type: string
+        required: true
+        classification: confidential
+        masking: tokenization
+
+      Customer Name:
+        type: string
+        required: true
+        classification: personal_data
+        masking: pseudonymization
+
+      Order Date:
+        type: date
+        required: true
+
+      Ship Date:
+        type: date
+        required: true
+
+      Sales:
+        type: number
+        required: true
+        minimum: 0
+
+      Quantity:
+        type: integer
+        required: true
+        minimum: 1
+
+      Discount:
+        type: number
+        required: true
+        minimum: 0
+        maximum: 1
+
+      Category:
+        type: string
+        required: true
+        allowed_values:
+          - Furniture
+          - Office Supplies
+          - Technology
+
+    quality_rules:
+      - "Row ID must be unique"
+      - "Order ID must not be null"
+      - "Customer ID must not be null"
+      - "Product ID must not be null"
+      - "Sales must be non-negative"
+      - "Quantity must be at least 1"
+      - "Discount must be between 0 and 1"
+      - "Category must contain an approved value"
+
+    privacy:
+      policy: "Restrict access to personal and confidential fields"
+      customer_name: "Pseudonymize before sharing"
+      customer_id: "Tokenize before external sharing"
