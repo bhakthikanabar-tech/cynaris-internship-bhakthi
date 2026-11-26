@@ -1,0 +1,5 @@
+Column,Lower Bound,Upper Bound,Outliers Detected,Treatment
+Sales,-271.71000000000004,498.93,1167,Capped using IQR bounds
+Quantity,-2.5,9.5,170,Capped using IQR bounds
+Discount,-0.30000000000000004,0.5,856,Capped using IQR bounds
+Profit,-39.724125,70.816875,1881,Capped using IQR bounds
