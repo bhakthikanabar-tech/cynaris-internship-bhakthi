@@ -1,0 +1,115 @@
+
+<html>
+<head>
+<title>Great Expectations Validation Report</title>
+<style>
+body { font-family: Arial; margin: 30px; }
+table { border-collapse: collapse; }
+th { background: #eeeeee; }
+td, th { padding: 8px; }
+</style>
+</head>
+<body>
+<h1>Week 2 Day 6 - Data Quality Validation</h1>
+<p>Dataset: Sample - Superstore.csv</p>
+<p>Generated: 2026-11-26 11:02</p>
+
+
+    <h2>Original Dataset</h2>
+    <p><strong>Overall result:</strong> PASS</p>
+    <table border="1" cellpadding="8">
+        <tr><th>Expectation</th><th>Result</th></tr>
+        
+        <tr>
+            <td>expect_column_values_to_be_unique</td>
+            <td>PASS</td>
+        </tr>
+        
+        <tr>
+            <td>expect_column_values_to_not_be_null</td>
+            <td>PASS</td>
+        </tr>
+        
+        <tr>
+            <td>expect_column_values_to_not_be_null</td>
+            <td>PASS</td>
+        </tr>
+        
+        <tr>
+            <td>expect_column_values_to_not_be_null</td>
+            <td>PASS</td>
+        </tr>
+        
+        <tr>
+            <td>expect_column_values_to_be_between</td>
+            <td>PASS</td>
+        </tr>
+        
+        <tr>
+            <td>expect_column_values_to_be_between</td>
+            <td>PASS</td>
+        </tr>
+        
+        <tr>
+            <td>expect_column_values_to_be_between</td>
+            <td>PASS</td>
+        </tr>
+        
+        <tr>
+            <td>expect_column_values_to_be_in_set</td>
+            <td>PASS</td>
+        </tr>
+        
+    </table>
+    
+
+    <h2>Dataset with Injected Errors</h2>
+    <p><strong>Overall result:</strong> FAIL</p>
+    <table border="1" cellpadding="8">
+        <tr><th>Expectation</th><th>Result</th></tr>
+        
+        <tr>
+            <td>expect_column_values_to_be_unique</td>
+            <td>PASS</td>
+        </tr>
+        
+        <tr>
+            <td>expect_column_values_to_not_be_null</td>
+            <td>PASS</td>
+        </tr>
+        
+        <tr>
+            <td>expect_column_values_to_not_be_null</td>
+            <td>FAIL</td>
+        </tr>
+        
+        <tr>
+            <td>expect_column_values_to_not_be_null</td>
+            <td>PASS</td>
+        </tr>
+        
+        <tr>
+            <td>expect_column_values_to_be_between</td>
+            <td>FAIL</td>
+        </tr>
+        
+        <tr>
+            <td>expect_column_values_to_be_between</td>
+            <td>PASS</td>
+        </tr>
+        
+        <tr>
+            <td>expect_column_values_to_be_between</td>
+            <td>FAIL</td>
+        </tr>
+        
+        <tr>
+            <td>expect_column_values_to_be_in_set</td>
+            <td>PASS</td>
+        </tr>
+        
+    </table>
+    
+
+</body>
+</html>
